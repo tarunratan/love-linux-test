@@ -8,6 +8,42 @@
     
     <!-- Add CSS styles for interactive elements -->
     <style>
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #007bff;
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        
+        h3 {
+            color: #007bff;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -15,6 +51,7 @@
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
         
         .button:hover {
@@ -35,6 +72,21 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -52,20 +104,23 @@
     <ul>
         <li>Continuously created and maintained application environments, monitoring services and ensuring their proper implementation.</li>
         <li>Worked with SQL (PostgreSQL, MySQL) and NoSQL (MongoDB) databases on a day-to-day basis.</li>
-        <li>Proficient in Docker, Kubernetes, Linux scripting, cron jobs, Nginx, and Terraform for infrastructure management.</li>
-        <li>Gained expertise in Linux administration, Docker containerization, and Kubernetes orchestration.</li>
-        <li>Implemented CI/CD pipelines using Bitbucket Pipelines for seamless deployment.</li>
-        <li>Created Linux scripts for continuous monitoring and alerting based on server threshold limits.</li>
-        <li>Automated deployments on servers using custom Linux scripts and scheduled cron jobs.</li>
-        <li>Ensured application security by following Docker best practices and eliminating vulnerabilities.</li>
-        <li>Utilized HashiCorp Vault for secure storage and retrieval of secrets.</li>
-        <li>Performed load testing and optimized infrastructure to handle high user traffic with 100% API request success rate.</li>
-        <li>Managed sub-domains for development applications and maintained infrastructure architecture using Terraform.</li>
-        <li>Configured and maintained WordPress sites, managing SSL certificates and security.</li>
-        <li>Implemented monitoring using Prometheus and Grafana to visualize live metrics of an e-commerce application.</li>
-        <li>Set up self-hosted GitHub alternative (Gitea) for team collaboration and version control.</li>
-        <li>Deployed and managed self-hosted mail server (Mailcow) for multiple domains.</li>
-        <li>Proficient in database version control systems such as Liquibase for tracking schema changes.</li>
+        <li>Proficient in Docker, Kubernetes, Linux scripting, cron jobs, Nginx, and Terraform for infrastructure automation.</li>
+        <li>Deep understanding of Linux, Docker for containerization, and Kubernetes for orchestration and auto scaling.</li>
+        <li>Experience with multiple cloud servers, including Windows and Debian-based, for setting up application infrastructures.</li>
+        <li>Implemented CI/CD pipelines using Bitbucket Pipelines for efficient software delivery.</li>
+        <li>Developed Linux scripts for continuous monitoring and automated deployments.</li>
+        <li>Utilized cron jobs for scheduling tasks and ensuring timely execution.</li>
+        <li>Ensured application security by following best practices of Docker and implementing vulnerability fixes.</li>
+        <li>Used HashiCorp Vault for secure storage and retrieval of secrets in the codebase.</li>
+        <li>Performed load testing and optimized infrastructure to handle high user traffic with 100% success rate in API requests.</li>
+        <li>Created sub-domains for development applications and maintained infrastructure architecture using Terraform.</li>
+        <li>Developed a lightweight Go-lang application as an alternative to Jenkins, streamlining CI/CD processes and saving deployment time and resources.</li>
+        <li>Managed SSL certificates and configuration for over 50 WordPress sites regularly.</li>
+        <li>Utilized Prometheus for live application monitoring, fetching metrics from Node Exporter and Nginx.</li>
+        <li>Visualized metrics using Grafana, creating interactive graphs and dashboards.</li>
+        <li>Set up self-hosted GitHub alternative, Gitea, for efficient version control and collaboration within a team of 50+ members.</li>
+        <li>Configured self-hosted mail server using Mailcow for managing mail setup across 50+ domains.</li>
+        <li>Proficient in database version control using Liquibase for tracking and recording schema changes.</li>
         <li>Managed team member details in G Suite accounts for effective collaboration.</li>
         <li>Implemented various security measures including Nginx blocking, rate limiting, reverse proxy, and Cloudflare for protection against threats.</li>
     </ul>
@@ -76,33 +131,28 @@
         <li>Proficient in containerization (Docker), microservices architecture (Spring Boot, Spring Cloud, Eureka), API management (Eureka API server), Java development (RESTful APIs, security), and DevOps tools (Jenkins).</li>
         <li>Developed a lightweight Go-lang application as an alternative to Jenkins for streamlined CI/CD processes and resource optimization.</li>
         <li>Managed SSL certificates and configuration for over 50 WordPress sites.</li>
-        <li>Used Prometheus for monitoring live metrics, fetching data from Node Exporter and Nginx.</li>
+        <li>Utilized Prometheus for monitoring live metrics, fetching data from Node Exporter and Nginx.</li>
         <li>Utilized Grafana for visualization of metrics from Prometheus.</li>
         <li>Configured and managed virtual machines for Kubernetes on-premises setup.</li>
     </ul>
     
     <!-- Add interactive elements -->
-    <button class="button">Contact Me</button>
+    <a class="button" href="mailto:tarunratan@example.com">Contact Me</a>
     
     <h3 class="animated">Welcome to My Website!</h3>
     
-    <video width="999px" loop="true" autoplay="autoplay" controls muted>  
-        <source src="rickroll.mp4" type="video/mp4">
-    </video>
+    <div class="video-container">
+        <video loop="true" autoplay="autoplay" controls muted>
+            <source src="rickroll.mp4" type="video/mp4">
+        </video>
+    </div>
     
     <!-- Add links to your GitHub projects -->
     <h3>Check out my GitHub projects:</h3>
     <ul>
-        <li><a href="https://github.com/tarunratan" target="_blank">Project 1</a></li>
-        <li><a href="https://github.com/tarunratan" target="_blank">Project 2</a></li>
-        <li><a href="https://github.com/tarunratan" target="_blank">Project 3</a></li>
-        <!-- Add more project links as needed -->
+        <li><a href="https://github.com/tarunratan/GO_CD">GO_CD</a></li>
+        <li><a href="https://github.com/tarunratan/openai-chatbot">Self-hosted openai-chatbot</a></li>
     </ul>
     
-    <!-- Add other sections or customize the code as per your preference -->
-    
-    <script>
-        // Add JavaScript code for additional interactivity, if needed
-    </script>
 </body>
 </html>
